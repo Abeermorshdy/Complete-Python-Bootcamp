@@ -1,0 +1,40 @@
+2025-01-29 22:33:05,457 - __main__ - INFO - Main module started
+2025-01-29 22:33:05,458 - module_a - INFO - Module A function started
+2025-01-29 22:33:05,459 - module_a - DEBUG - This is a debug message from Module A
+2025-01-29 22:33:05,459 - module_a - INFO - Module A function finished
+2025-01-29 22:33:05,460 - module_b - INFO - Module B function started
+2025-01-29 22:33:05,461 - module_b - DEBUG - This is a debug message from Module B
+2025-01-29 22:33:05,462 - module_b - INFO - Module B function finished
+2025-01-29 22:33:05,462 - __main__ - INFO - Main module finished
+2025-01-29 22:34:13,020 - __main__ - INFO - Main module started
+2025-01-29 22:34:13,020 - module_a - INFO - Module A function started
+2025-01-29 22:34:13,020 - module_a - DEBUG - This is a debug message from Module A
+2025-01-29 22:34:13,020 - module_a - INFO - Module A function finished
+2025-01-29 22:34:13,020 - module_b - INFO - Module B function started
+2025-01-29 22:34:13,020 - module_b - DEBUG - This is a debug message from Module B
+2025-01-29 22:34:13,020 - module_b - INFO - Module B function finished
+2025-01-29 22:34:13,020 - __main__ - INFO - Main module finished
+2025-01-29 22:36:06,193 - __main__ - INFO - Main module started
+2025-01-29 22:36:06,193 - module_a - INFO - Module A function started
+2025-01-29 22:36:06,193 - module_a - DEBUG - This is a debug message from Module A
+2025-01-29 22:36:06,193 - module_a - INFO - Module A function finished
+2025-01-29 22:36:06,193 - module_b - INFO - Module B function started
+2025-01-29 22:36:06,193 - module_b - DEBUG - This is a debug message from Module B
+2025-01-29 22:36:06,193 - module_b - INFO - Module B function finished
+2025-01-29 22:36:06,209 - __main__ - INFO - Main module finished
+2025-01-29 22:39:54,833 - __main__ - INFO - Main module started
+2025-01-29 22:39:54,833 - module_a - INFO - Module A function started
+2025-01-29 22:39:54,833 - module_a - DEBUG - This is a debug message from Module A
+2025-01-29 22:39:54,833 - module_a - INFO - Module A function finished
+2025-01-29 22:39:54,833 - module_b - INFO - Module B function started
+2025-01-29 22:39:54,833 - module_b - DEBUG - This is a debug message from Module B
+2025-01-29 22:39:54,833 - module_b - INFO - Module B function finished
+2025-01-29 22:39:54,833 - __main__ - INFO - Main module finished
+2025-01-29 22:40:02,978 - __main__ - INFO - Main module started
+2025-01-29 22:40:02,978 - module_a - INFO - Module A function started
+2025-01-29 22:40:02,978 - module_a - DEBUG - This is a debug message from Module A
+2025-01-29 22:40:02,978 - module_a - INFO - Module A function finished
+2025-01-29 22:40:02,978 - module_b - INFO - Module B function started
+2025-01-29 22:40:02,978 - module_b - DEBUG - This is a debug message from Module B
+2025-01-29 22:40:02,978 - module_b - INFO - Module B function finished
+2025-01-29 22:40:02,978 - __main__ - INFO - Main module finished
