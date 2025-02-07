@@ -32,17 +32,21 @@ urls=[
 
 def fetch_content(url):
     response=requests.get(url)
-    soup=BeautifulSoup(response.content,'html.parser')
-    print(f'Fetched {len(soup.text)} characters from {url}')
+    print(response)
+    #soup=BeautifulSoup(response.content,'html.parser')
+    #print(f'Fetched {len(soup.text)} characters from {url}')
 
-threads=[]
+fetch_content(urls[0])
+#threads=[]
 
-for url in urls:
-    thread=threading.Thread(target=fetch_content,args=(url,))
-    threads.append(thread)
-    thread.start()
+# for url in urls:
+#     thread=threading.Thread(target=fetch_content,args=(url,))
+#     threads.append(thread)
+#     thread.start()
 
-for thread in threads:
-    thread.join()
+# print(threads)
 
-print("All web pages fetched")
+# for thread in threads:
+#     thread.join()
+
+# print("All web pages fetched")
