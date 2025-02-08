@@ -18,8 +18,9 @@ from flask import Flask,render_template,request,redirect,url_for
 app=Flask(__name__)
 
 @app.route("/")
-def welcome():
-    return "<html><H1>Welcome to the flask course</H1></html>"
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 @app.route("/index",methods=['GET'])
 def index():
@@ -58,7 +59,6 @@ def successres(score):
 ## if confition
 @app.route('/sucessif/<int:score>')
 def successif(score):
-
     return render_template('result.html',results=score)
 
 @app.route('/fail/<int:score>')
@@ -67,21 +67,18 @@ def fail(score):
 
 @app.route('/submit',methods=['POST','GET'])
 def submit():
-    total_score=0
+    results=0
     if request.method=='POST':
         science=float(request.form['science'])
         maths=float(request.form['maths'])
         c=float(request.form['c'])
         data_science=float(request.form['datascience'])
 
-        total_score=(science+maths+c+data_science)/4
+        results=(science+maths+c+data_science)/4
     else:
         return render_template('getresult.html')
-    return redirect(url_for('successres',score=total_score))
-            
-        
-
-
+    return redirect(url_for('successres',score=results))
+      
 
 
 if __name__=="__main__":

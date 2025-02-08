@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
-<script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}">
-  
-</script>
+{% extends "layout.html"%}
+{%block content %}
+<h2>Check your results</h2>
 
-</head>
-<body>
 
-<h2>HTML Forms</h2>
+<form action="/submit" method='post'>
+  <fieldset>
+    <legend>Fieldset example</legend>
+    <div class="mb-3">
+      <label for="science" class="form-label">Science:</label>
+      <input type="text" id="science" name="science" class="form-control" placeholder="0">
+    </div>
 
+    <div class="mb-3">
+      <label for="maths" class="form-label">Science:</label>
+      <input type="text" id="maths" name="maths" class="form-control" placeholder="0">
+    </div>
+
+    <div class="mb-3">
+      <label for="c" class="form-label">C:</label>
+      <input type="text" id="c" name="c" class="form-control" placeholder="0">
+    </div>
+
+    <div class="mb-3">
+      <label for="datascience" class="form-label">datascience:</label>
+      <input type="text" id="datascience" name="datascience" class="form-control" placeholder="0">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+<!-- 
 <form action="/submit" method='post'>
   <label for="Science">Science:</label><br>
   <input type="text" id="science" name="science" value="0"><br>
@@ -24,6 +44,5 @@
 </form> 
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
-
-</body>
-</html>
+-->
+{%endblock content%}

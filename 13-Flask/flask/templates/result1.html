@@ -1,9 +1,6 @@
-<html>
-<h2>
-    Final Results
-</h2>
-<body>
-
+{% extends "layout.html"%}
+{%block content %}
+<h2>Your results are</h2>
    
      {% for key,value in results.items()   %}
      
@@ -14,6 +11,4 @@
     
      {% endfor %}
 
-    
-</body>
-</html>
+{%endblock content%}
